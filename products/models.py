@@ -10,7 +10,7 @@ class Product(models.Model):
 	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 	active = models.BooleanField(default=True)
 	def __unicode__(self):
-		return str(self.title)
+		return "Esto es un producto"
 
 	def get_price(self):
 		return self.price

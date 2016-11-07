@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'ecommerce.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', 'products.views.home', name='home'),
+    url(r'^products/$', 'products.views.all', name='products'),
     url(r'^admin/', include(admin.site.urls)),
 )
