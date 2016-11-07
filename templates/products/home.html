@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head_title %}
+Welcome to
+{% endblock %}
+
+{% block styles %}
+.jumbotron {
+	color: red;
+}
+{% endblock %}
+
+{% block jquery %}
+//alert("welcome!");
+{% endblock%}
+
+{# Comments here #}
+
+
+{% block content %}
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+<h1> Hello {{ username_is }}</h1>
+<p>Este es un ejemplo rapido para ilustrar como quedará el default, estático y fijo en navbar de trabajo. Esto incluye CSS y HTML resposivo, entonces esto tambien esto esta adaptado para su dispositivo móvil.</p>
+<p>PAra ver la diferencia entre estático y fijo, solo haga scroll.</p>
+<p>
+<a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Ver navbar docs &raquo;</a>
+</p>
+</div>
+
+{% endblock %}

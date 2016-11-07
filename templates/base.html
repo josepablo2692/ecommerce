@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Static Top Navbar ejemplp para Bootstrap</title>
+    <title>{% block head_title %}{% endblock %}Trendy.gt Store</title>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -18,7 +18,10 @@
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/navbar-static-top/navbar-static-top.css" rel="stylesheet">
-
+    <style>
+    {% block styles %}
+    {% endblock %}	
+    </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
@@ -39,19 +42,10 @@
 
     <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1> Hola {{ username_is }}</h1>
-        <p>Este es un rapido ejemplo para demostrar el default de la web, y la barra de navegación.Esto include la resposividad en CSS y HTML.
-        It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>Para ver la diferencia entre statico y fijo en el top de la barra de navegacion, simplemente desplazarse.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Vista navbar docs &raquo;</a>
-        </p>
-      </div>
+    {% block content %}
 
-    </div> <!-- /container -->
 
+    {% endblock %}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -59,5 +53,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+			{% block jquery %}{% endblock%}
+	});
+
+	</script>
   </body>
 </html>
