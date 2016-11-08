@@ -3,35 +3,25 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Botones de navegacion</span>
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Trendy.gt Store</a>
+          <a class="navbar-brand" href="#">Trendy.gt</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Bienvenido</a></li>
-            <li><a href="#about">Acerca</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deslizar <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Acciones</a></li>
-                <li><a href="#">Otra accion</a></li>
-                <li><a href="#">Algo más aquí</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Links separados</a></li>
-                <li><a href="#">Un link mas separado</a></li>
-              </ul>
-            </li>
-          </ul>
+
+          <form class="navbar-form navbar-left" role="search" action='/s/'>
+            <div class="form-group">
+          <input type="text" class="form-control" name='q' placeholder="Search Product Title">
+            </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          </form>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Top estático</a></li>
-            <li><a href="../navbar-fixed-top/">Top Fijo</a></li>
+            <li class="active"><a href="./">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
