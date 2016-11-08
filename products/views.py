@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, Http404
 
 # Create your views here.
 
@@ -16,4 +16,9 @@ def all(request):
 	products = Product.objects.all()
 	context = {'products': products}
 	template = 'products/all.html'	
+
 	return render(request, template, context)
+
+
+
+	
